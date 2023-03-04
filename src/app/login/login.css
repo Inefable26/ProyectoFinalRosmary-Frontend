@@ -1,0 +1,10 @@
+.btn btn-primary{
+    background-color: rgba(31, 179, 159, 0.852);
+    border: 3px solid rgb(48, 2, 48);
+    
+}
+
+button:hover:not(.active) {
+    background-color: blueviolet;
+    transition: all ease 0.2s;
+}

@@ -1,0 +1,45 @@
+
+i.fa-brands.fa-instagram.fa-2xl:hover {
+    color:rgb(226, 43, 226)
+   }
+   
+   i.fa-brands.fa-square-github.fa-2xl:hover {
+    color:rgb(226, 43, 226)
+   }
+   
+
+
+.flex-container{
+    display:flex;
+    background-color: rgb(249, 246, 251);
+    width: 170px;
+    height: 50px;
+    border:0.1cm solid rgb(26, 139, 93);
+    flex-wrap: nowrap;
+    align-items:center; /*alineación vertical dentro del contenedor*/
+    align-content: center; /*orientacion de las divisiones dentro del contenedor*/
+    justify-content: center; /*alineación de las divisiones dentro del contenedor*/
+    margin: 5px;
+    padding: 10px;
+   
+}
+   
+
+.flex-container div {
+    background-color: rgb(44, 191, 174);
+    margin: 6px;
+    height: auto;
+    width: auto;
+    text-align: center;
+    line-height: 20px;
+    border: 0.07cm solid rgb(48, 2, 48);
+    padding: 5%;
+
+}
+
+.list-group-item {
+    width: 40px;
+    height: 40px;
+    font-size: 90%;
+}
+
