@@ -11,7 +11,6 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SocialNetworksComponent } from './social-networks/social-networks.component';
 import { LoginComponent } from './login/login';
 import { PrincipalpageComponent } from './principalpage/principalpage.component';
-import { AlterComponent } from './alter/alter.component';
 import { ErrorComponent } from './error/error.component';
 import { FooterComponent } from './footer/footer.component';
 import { BannerComponent } from './banner/banner.component';
@@ -31,7 +30,6 @@ import { EditComponent } from './edit/edit.component';
     SocialNetworksComponent,
     LoginComponent,
     PrincipalpageComponent,
-    AlterComponent,
     ErrorComponent,
     FooterComponent,
     BannerComponent,
