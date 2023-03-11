@@ -17,7 +17,7 @@ import { BannerComponent } from './banner/banner.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { AboutComponent } from './about/about.component';
 import { EditComponent } from './edit/edit.component';
-
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -40,7 +40,8 @@ import { EditComponent } from './edit/edit.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
