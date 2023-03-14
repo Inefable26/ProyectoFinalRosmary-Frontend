@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class EditComponent {
 
+ /* onLogOut():void{
+    this.tokenService.logOut();
+    window.location.reload();
+  }*/ /*sirve para cerrar sesión????*/
 }

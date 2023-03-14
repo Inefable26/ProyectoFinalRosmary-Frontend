@@ -18,6 +18,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { AboutComponent } from './about/about.component';
 import { EditComponent } from './edit/edit.component';
 import { HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { interceptorProvider } from './service/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -41,9 +43,12 @@ import { HttpClientModule} from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

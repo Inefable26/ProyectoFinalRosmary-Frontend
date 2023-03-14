@@ -11,24 +11,32 @@
       </div>
         
       <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address (email@dominio.com)</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="email@dominio.com" required>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" name="psw" placeholder="1234" required>
-            </div>
-            <div class="mb-3 form-check">
+         
+        <!--Inicio de formulario--> 
+        <form #f="ngForm" (ngSubmit)="onLogin()" novalidate> 
+            
+          <div class="mb-3">
+              <label for="nombreUsuario" class="form-label">Email address (email@dominio.com)</label>
+              <input type="email" class="form-control" id="nombreUsuario" name="nombreUsuario" aria-describedby="emailHelp" placeholder="email@dominio.com" [(ngModel)]="nombreUsuario" required>
+          </div>
+
+          <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="1234" [(ngModel)]="password" required>
+          </div>
+
+          <div class="mb-3 form-check">
               <label class="form-check-label" for="exampleCheck1">Remember me</label>
               <input type="checkbox" checked="checked" class="form-check-input" id="Check" name="remember">
-            </div>
-          </form>
+          </div>
+
+        </form>
+        <!--Fin de formulario-->
+
       </div>
 
       <div class="modal-footer">
-          <button type="submit" form="form-signin" class="btn btn-primary" data-bs-dismiss="modal" routerLink="edit">Iniciar sesión</button>
+          <button type="submit" form="form-signin" class="btn btn-primary" data-bs-dismiss="modal"  >Iniciar sesión</button>
       </div>
 
       </div>
