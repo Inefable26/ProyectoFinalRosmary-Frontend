@@ -1,0 +1,115 @@
+<div class="flex-container">
+    <h3>Projects</h3>
+    
+    <button type="button" data-bs-toggle="modal" data-bs-target="#modalprojects">Edit on me</button>
+
+    <!-- Modal proyectos -->
+    <div class="modal fade" id="modalprojects" tabindex="-1"> <!--Fade hace que el diálogo aparezca lentito, efecto de desvanecimiento -->
+      <div class="modal-dialog"> <!--Aquí van cambio de tamaño(sm...lg) y orientación vertical(centered)-->
+        <div class="modal-content"> <!--Dentro de esto se organiza el contenido-->
+          
+          <div class="modal-header"> <!--Encabezado-->
+            <h5 class="modal-title" id="ModalLabel">Projects</h5>
+            <p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</a></p>
+        </div> <!--Cierre de Encabezado-->
+        
+        <div class="modal-body"> <!--Apertura de Body-->
+          
+          <form>
+          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+            
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+            <div class="mb-3">
+              <label for="formFileSm" class="form-label">Foto del proyecto</label>
+              <input class="form-control form-control-sm" id="formFileSm" type="file">
+            </div>
+
+            <div class="form-floating">
+              <input type="title" class="form-control" id="floatingTitle" >
+              <label for="floatingTitle">Titulo del proyecto</label>
+            </div>
+          
+            <div class="form-floating">
+              <textarea class="form-control"  id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Descripción del proyecto</label>
+            </div>
+
+            <div class="form-floating">
+              <input type="title" class="form-control" id="floatingYear" >
+              <label for="floatingYear">Año de realización</label>
+            </div>
+          
+            <div class="form"> <!--Apertura de añadir proyecto-->
+            <a role="button" href="#" data-bs-toggle="modal" data-bs-target="#nuevoproyecto">Añadir Nuevo Proyecto</a>
+
+          </div> <!--Cierre de Añadir proyecto-->
+
+          </form>
+        </div> <!--Cierre de Body-->
+
+        <div class="modal-footer"> <!--Apertura de footer-->
+          <button type="button" class="btn btn-primary" value="Save">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Delete">Delete</button>
+        </div> <!--Cierre de footer-->
+
+        </div> <!--Dentro de esto se organiza el contenido-->
+      </div> <!--Dentro de esto está modal dialog-->
+    </div> <!--Cierre de modal fade que contiene los Proyectos-->
+
+
+<!--Modal 2-->
+<!-- Modal proyectos -->
+<div class="modal fade" id="nuevoproyecto" tabindex="-1"> <!--Fade hace que el diálogo aparezca lentito, efecto de desvanecimiento -->
+<div class="modal-dialog"> <!--Aquí van cambio de tamaño(sm...lg) y orientación vertical(centered)-->
+<div class="modal-content"> <!--Dentro de esto se organiza el contenido-->
+  
+  <div class="modal-header"> <!--Encabezado-->
+    <h5 class="modal-title" id="ModalLabel">Nuevo Proyecto</h5>
+    <p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</a></p>
+</div> <!--Cierre de Encabezado-->
+
+<div class="modal-body"> <!--Apertura de Body-->
+  
+  <form>
+ 
+    <div class="mb-3">
+      <label for="formFileSm" class="form-label">Foto del proyecto</label>
+      <input class="form-control form-control-sm" id="formFileSm" type="file">
+    </div>
+
+    <div class="form-floating">
+      <input type="title" class="form-control" id="floatingTitle" >
+      <label for="floatingTitle">Titulo del proyecto</label>
+    </div>
+  
+    <div class="form-floating">
+      <textarea class="form-control"  id="floatingTextarea"></textarea>
+      <label for="floatingTextarea">Descripción del proyecto</label>
+    </div>
+
+    <div class="form-floating">
+      <input type="title" class="form-control" id="floatingYear" >
+      <label for="floatingYear">Año de realización</label>
+    </div>
+
+  </form>
+</div> <!--Cierre de Body-->
+
+<div class="modal-footer"> <!--Apertura de footer-->
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Add">Add</button>
+</div> <!--Cierre de footer-->
+
+</div> <!--Dentro de esto se organiza el contenido-->
+</div> <!--Dentro de esto está modal dialog-->
+</div> <!--Cierre de modal fade que contiene los Proyectos-->
+
+
+<!--Cierre de modal 2-->
+
+
+</div> <!--Cierre del flex-container de la columna-->

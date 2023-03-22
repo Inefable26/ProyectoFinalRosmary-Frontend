@@ -3,10 +3,11 @@
     display:flex;
     margin-right: 12%;
     margin-left: 12%;
-    margin-bottom: 2%;
-    border:3px solid rgb(48, 2, 48);
-    background-color: rgb(94, 28, 156);
+    margin-bottom: 20px; /*para que no lo pise el footer*/
 
+    border:3px solid rgb(48, 2, 48);
+    background-color: rgb(94, 28, 156);  
+    
 }
 
 .card-body{

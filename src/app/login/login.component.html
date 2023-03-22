@@ -1,0 +1,48 @@
+<!-- Modal login -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    
+  <div class="modal-dialog">
+      
+    <div class="modal-content">
+        
+      <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+        
+      <div class="modal-body">
+         
+ <!--Inicio de formulario--> 
+        <form #f="ngForm" (ngSubmit)="onLogin()" novalidate> 
+            
+          <div class="mb-3">
+              <label for="nombreUsuario" class="form-label">Usuario</label>
+              <input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario" placeholder="Usuario" [(ngModel)]="nombreUsuario" required>
+          </div>
+
+          <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="1234" [(ngModel)]="password" required>
+          </div>
+
+        
+    
+      <div class="modal-footer" >
+        <button type="submit"  class="btn btn-primary" data-bs-dismiss="modal" aria-label="Inicio de sesión" >Iniciar sesión</button>
+      </div>
+    
+        </form>
+ <!--Fin de formulario-->
+
+      </div>
+      
+
+      
+
+      <div *ngIf="isLogginFail" class="alert alert-danger">{{errMsj}}</div>
+      <div *ngIf="isLogged && isAdmin" class="alert alert-success">Hola, admin</div>
+      <div *ngIf="isLogged && !(isAdmin)" class="alert alert-success">Hola, usuario</div>
+      
+      </div>
+    </div>
+  </div>

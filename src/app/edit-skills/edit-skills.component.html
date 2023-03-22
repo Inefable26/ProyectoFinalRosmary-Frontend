@@ -1,0 +1,101 @@
+<div class="container">
+       
+   
+    <!--Inicio de Skills-->
+            <div class="card">
+                <h3>Skills</h3>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#modalsoft">Edit on me</button>
+    
+    <!-- Modal Skills -->
+    <div class="modal fade" id="modalsoft" tabindex="-1"> <!--Fade hace que el diálogo aparezca lentito, efecto de desvanecimiento -->
+      <div class="modal-dialog"> <!--Aquí van cambio de tamaño(sm...lg) y orientación vertical(centered)-->
+        <div class="modal-content"> <!--Dentro de esto se organiza el contenido-->
+          
+          <div class="modal-header"> <!--Encabezado-->
+            <h5 class="modal-title" id="ModalLabel">Skills</h5>
+            <p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</a></p>
+        </div> <!--Cierre de Encabezado-->
+        
+        <div class="modal-body"> <!--Apertura de Body-->
+          
+          <form>
+    
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <option selected>Select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+    
+            <div class="form-floating">
+              <input type="title" class="form-control" id="floatingTitle" >
+              <label for="floatingTitle">Skill</label>
+            </div>
+    
+            <div class="form-floating">
+              <input type="title" class="form-control" id="floatingTitle" >
+              <label for="floatingTitle">% Skill</label>
+            </div>
+          
+        
+            <div class="form"> <!--Apertura de añadir -->
+            <a role="button" href="#" data-bs-toggle="modal" data-bs-target="#nuevasoft">Añadir nuevo </a>
+    
+          </div> <!--Cierre de Añadir-->
+    
+          </form>
+        </div> <!--Cierre de Body-->
+    
+        <div class="modal-footer"> <!--Apertura de footer-->
+          <button type="button" class="btn btn-primary" value="Save">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Delete">Delete</button>
+        </div> <!--Cierre de footer-->
+    
+        </div> <!--Dentro de esto se organiza el contenido-->
+      </div> <!--Dentro de esto está modal dialog-->
+    </div> <!--Cierre de modal fade que contiene todo-->
+    
+    
+    <!--Modal 2-->
+    <!-- Modal -->
+    <div class="modal fade" id="nuevasoft" tabindex="-1"> <!--Fade hace que el diálogo aparezca lentito, efecto de desvanecimiento -->
+    <div class="modal-dialog"> <!--Aquí van cambio de tamaño(sm...lg) y orientación vertical(centered)-->
+    <div class="modal-content"> <!--Dentro de esto se organiza el contenido-->
+    
+    <div class="modal-header"> <!--Encabezado-->
+    <h5 class="modal-title" id="ModalLabel">Nueva Skill</h5>
+    <p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</a></p>
+    </div> <!--Cierre de Encabezado-->
+    
+    <div class="modal-body"> <!--Apertura de Body-->
+    
+    <form>
+    
+      <div class="form-floating">
+        <input type="title" class="form-control" id="floatingTitle" >
+        <label for="floatingTitle">Skill</label>
+      </div>
+    
+      <div class="form-floating">
+        <input type="title" class="form-control" id="floatingTitle" >
+        <label for="floatingTitle">% Skill</label>
+      </div>
+    
+    
+    </form>
+    </div> <!--Cierre de Body-->
+    
+    <div class="modal-footer"> <!--Apertura de footer-->
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Add">Add</button>
+    </div> <!--Cierre de footer-->
+    
+    </div> <!--Dentro de esto se organiza el contenido-->
+    </div> <!--Dentro de esto está modal dialog-->
+    </div> <!--Cierre de modal fade que contiene los Proyectos-->
+    
+    
+    <!--Cierre de modal 2-->
+            </div>
+    <!--Fin de Skills-->
+
+</div> <!--Cierre de container-->

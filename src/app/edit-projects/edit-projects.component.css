@@ -1,0 +1,131 @@
+
+
+.flex-container ul {
+	list-style: none;
+}
+
+.flex-container ul li {
+	margin: 15px;
+	font-weight: bold;
+}
+
+h3 {
+	text-align: center;
+}
+
+
+button{
+    flex-direction: column;
+    justify-content: center;
+	align-items: center; 
+    line-height: 1.0;
+
+    width:12rem;
+    height: 50px;
+
+    background-color: rgba(31, 179, 159);
+    border: 3px solid rgb(48, 2, 48);
+    border-radius: 1cm;
+    
+
+	font-weight: bold;
+	font-size: 14px;
+	
+    padding: 0.5rem 30px;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+button:hover:not(.active) {
+    background-color: blueviolet;
+    transition: all ease 0.2s;
+}
+
+/*Fin button*/
+
+/*Nuevo*/
+a {
+    background: transparent;
+    text-decoration: none;
+    color: #490574;
+    cursor: pointer;
+}
+
+a:hover:not(.active) {
+    background: blueviolet;
+    transition: all ease 0.2s;
+    border-bottom: 2px solid black;
+}
+/**Fin de nuevo*/
+
+.flex-container {
+	border-radius: 10px;
+	text-align: center;
+	align-items: center;
+	
+	padding: 20px;
+    border: 2px solid rgb(48, 2, 48);
+	background-size: cover;
+	background-position: center center;
+    background-image: url('../../assets/IMG/Hotel_Humboldt.jpg');
+    background-color: aquamarine;
+    color: black;
+
+    display:flex; /*flex*/
+    flex-direction: column; /*flex*/
+    justify-content: space-between; /*flex*/
+    
+
+    height: 30em;
+    width: auto;
+
+    font-weight: bold;
+
+}
+
+.modal-dialog{
+    text-align: left;
+}
+
+.modal-content{
+    background-color: rgba(43, 226, 98, 0.8);
+    
+}
+
+
+.btn-close {
+    background-color: none;
+}
+
+
+
+
+@media (max-width: 1200px) { /*Large*/
+    button {
+        padding: 1em;
+        width:12rem;
+        
+    }
+}
+
+@media (max-width: 992px) { /*Medium*/
+    button {
+        padding: 1em;
+        width:10rem;
+    }
+}
+
+@media (max-width: 768px) { /*Small*/
+    button {
+        padding: 1em;
+        width:5rem;
+    }
+}
+
+@media (max-width:600px) {  /*X- Small*/
+    button {
+        padding: 1em;
+        width:130px;
+        
+    }
+}

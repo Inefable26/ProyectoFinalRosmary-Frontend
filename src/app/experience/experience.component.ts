@@ -3,7 +3,7 @@ import { Experience } from '../model/experience';
 import { ExperienceService } from '../service/experience.service';
 import { TokenService } from '../service/token.service';
 
-@Component({
+@Component({ 
   selector: 'app-experience',
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.css']
@@ -11,7 +11,8 @@ import { TokenService } from '../service/token.service';
 export class ExperienceComponent  implements OnInit {
   experience: Experience[] = [];  //nombre del model//
 
-  constructor (private serviceExperience: ExperienceService, private tokenService:TokenService) {} //el del service//
+  //Abajo, en construc, service del back y lueg del front//
+  constructor (private impExperienceService: ExperienceService, private tokenService:TokenService) {} //el del service//
 
   isLogged = false;
   
@@ -26,7 +27,7 @@ export class ExperienceComponent  implements OnInit {
   }
 
   cargarExperience(): void{
-    this.serviceExperience.lista().subscribe(
+    this.impExperienceService.list().subscribe(
       data => {this.experience = data;}
     )
     

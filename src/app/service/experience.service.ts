@@ -7,16 +7,16 @@ import { Experience } from '../model/experience';
   providedIn: 'root'
 })
 export class ExperienceService {
- expURL= 'http://localhost:4200/exper' 
+ expURL= 'http://localhost:8080/experience/' 
 
   constructor(private httpClient: HttpClient) { }
 
-  public lista(): Observable <Experience[]>{ //Aquí se refiere al model de igual nombre//
-    return this.httpClient.get<Experience[]>(this.expURL + 'lista');
+  public list(): Observable <Experience[]>{ //Aquí se refiere al model de igual nombre//
+    return this.httpClient.get<Experience[]>(this.expURL + 'list');
   }
 
   public detail(id:number): Observable <Experience> {
-    return this.httpClient.get<Experience>(this.expURL + `detail/${id}`); //Tilde invertido porque pasamos dato de path//
+    return this.httpClient.get<Experience>(this.expURL+`detail/${id}`); //Tilde invertido porque pasamos dato de path//
   }
 
   public save(experience: Experience): Observable<any>{

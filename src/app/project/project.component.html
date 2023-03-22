@@ -4,20 +4,19 @@
     </div>
 
 
-<div class="card">
+<div class="card" *ngFor="let Project of project">
 
   <div class="card-header">
     <img src="../../assets/IMG/Ross-COLLAGE.jpg" class="card-img-top" alt="Rosmary">
   </div>
     
   <div class="card-body">
-      <h4 class="card-title">Mi portafolio personal</h4>
-      <p class="card-text">Desarrollo y estructuración de portafolio en frontend  y backend como parte de proceso formativo de Argentina Programa (YoProgramo)</p>
-      <div class="card-footer"><h5>2023</h5>
+      <h4 class="card-title">{{Project.titulo}}</h4>
+      <p class="card-text">{{Project.descripcion}}</p>
+      <div class="card-footer"><h5>{{Project.ano}}</h5>
       </div>
   </div>
 </div>
-
 
 
 </Section>

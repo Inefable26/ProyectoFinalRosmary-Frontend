@@ -1,0 +1,120 @@
+<div class="container">
+
+
+<!--Inicio de Education-->
+<div class="card">
+    <h3>Education</h3>
+    <button type="button" data-bs-toggle="modal" data-bs-target="#modaleducation">Edit on me</button>
+
+<!-- Modal educaction -->
+<div class="modal fade" id="modaleducation" tabindex="-1"> <!--Fade hace que el diálogo aparezca lentito, efecto de desvanecimiento -->
+<div class="modal-dialog"> <!--Aquí van cambio de tamaño(sm...lg) y orientación vertical(centered)-->
+<div class="modal-content"> <!--Dentro de esto se organiza el contenido-->
+
+<div class="modal-header"> <!--Encabezado-->
+<h5 class="modal-title" id="ModalLabel">Education</h5>
+<p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</a></p>
+</div> <!--Cierre de Encabezado-->
+
+<div class="modal-body"> <!--Apertura de Body-->
+
+<form>
+<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+
+<option selected>Select menu</option>
+<option value="1">One</option>
+<option value="2">Two</option>
+<option value="3">Three</option>
+</select>
+
+<div class="mb-3">
+  <label for="formFileSm" class="form-label">Logo</label>
+  <input class="form-control form-control-sm" id="formFileSm" type="file">
+</div>
+
+<div class="form-floating">
+  <input type="title" class="form-control" id="floatingTitle" >
+  <label for="floatingTitle">Título recibido</label>
+</div>
+
+<div class="form-floating">
+  <textarea class="form-control"  id="floatingTitle"></textarea>
+  <label for="floatingTitle">Institución</label>
+</div>
+
+<div class="form-floating">
+  <input type="title" class="form-control" id="floatingYear" >
+  <label for="floatingYear">Año de realización</label>
+</div>
+
+<div class="form"> <!--Apertura de añadir-->
+<a role="button" href="#" data-bs-toggle="modal" data-bs-target="#nuevoeducation">Añadir Nueva Educación</a>
+
+</div> <!--Cierre de Añadir-->
+
+</form>
+</div> <!--Cierre de Body-->
+
+<div class="modal-footer"> <!--Apertura de footer-->
+<button type="button" class="btn btn-primary" value="Save">Save changes</button>
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Delete">Delete</button>
+</div> <!--Cierre de footer-->
+
+</div> <!--Dentro de esto se organiza el contenido-->
+</div> <!--Dentro de esto está modal dialog-->
+</div> <!--Cierre de modal fade que contiene todo-->
+
+
+<!--Modal 2-->
+<!-- Modal education -->
+<div class="modal fade" id="nuevoeducation" tabindex="-1"> <!--Fade hace que el diálogo aparezca lentito, efecto de desvanecimiento -->
+<div class="modal-dialog"> <!--Aquí van cambio de tamaño(sm...lg) y orientación vertical(centered)-->
+<div class="modal-content"> <!--Dentro de esto se organiza el contenido-->
+
+<div class="modal-header"> <!--Encabezado-->
+<h5 class="modal-title" id="ModalLabel">Nueva Educación</h5>
+<p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</a></p>
+</div> <!--Cierre de Encabezado-->
+
+<div class="modal-body"> <!--Apertura de Body-->
+
+<form >  
+
+<div class="mb-3">
+<label for="formFileSm" class="form-label">Logo</label>
+<input class="form-control form-control-sm" id="formFileSm" type="file">
+</div>
+
+<div class="form-floating">
+<input type="title" class="form-control" id="floatingTitle" >
+<label for="floatingTitle">Titulo recibido</label>
+</div>
+
+<div class="form-floating">
+<textarea class="form-control"  id="floatingTitle"></textarea>
+<label for="floatingTitle">Institución</label>
+</div>
+
+<div class="form-floating">
+<input type="title" class="form-control" id="floatingYear" >
+<label for="floatingYear">Año de realización</label>
+</div>
+
+</form>
+</div> <!--Cierre de Body-->
+
+<div class="modal-footer"> <!--Apertura de footer-->
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Add">Add</button>
+</div> <!--Cierre de footer-->
+
+</div> <!--Dentro de esto se organiza el contenido-->
+</div> <!--Dentro de esto está modal dialog-->
+</div> <!--Cierre de modal fade que contiene todo-->
+<!--Cierre de modal 2-->
+</div>
+<!--Fin de Education-->
+
+
+</div> <!--Cierre de container-->
+
+

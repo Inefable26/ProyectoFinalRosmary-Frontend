@@ -4,28 +4,29 @@
   </div>
  
   <div class="flex-container">
-  <ul class="list-listings">
-  <li class="mi-experiencia">
+  <ul class="list-listings" *ngFor="let Experience of experience">
+  
+    <li class="mi-experiencia">
    <div class="row">
     <div class="col-md-2 col-sm-2">
       <img src="/assets/IMG/ar-prog_logo.png" alt="logo Argentina Programa" width="40%" height="">
    </div>
 
    <div class="col-md-10 col-sm-10">
-    <p><h5>Developer Full Stack Jr.</h5>
-    <p><h6>Argentina Programa</h6>
-    <p><h6>Julio-2022 Enero-2023</h6>
+    <p><h5>{{Experience.puesto}}</h5>
+    <p><h6>{{Experience.organizacion}}</h6>
+    <p><h6>{{Experience.ano}}</h6>
    </div>
    </div>
   </li> 
 
-  <li class="mi-experiencia">
+  <!--<li class="mi-experiencia">
     <div class="row">
      <div class="col-md-2 col-sm-2">
       <img src="assets/IMG/logo ucer.jpg" alt="logo UCER" width="60%" height="">
     </div>
  
-    <div class="col-md-10 col-sm-10">
+    <div class="col-md-10 col-sm-10" *ngFor="let Experience of experience">
       <p><h5>Pasante de Administración</h5>
       <p><h6>Unión de Colectividades de Entre Ríos</h6>
       <p><h6>Junio-2022 Sept-2022</h6>
@@ -45,7 +46,7 @@
       <p><h6>2010-2013</h6>
     </div>
     </div>
-   </li>
+   </li>-->
    
   </ul>
   </div>
