@@ -18,7 +18,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { AboutComponent } from './about/about.component';
 import { EditComponent } from './edit/edit.component';
 import { HttpClientModule} from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { interceptorProvider } from './service/interceptor-service';
 import { EditHeaderComponent } from './edit-header/edit-header.component';
 import { EditBannerComponent } from './edit-banner/edit-banner.component';
@@ -58,7 +58,8 @@ import { EditProjectsComponent } from './edit-projects/edit-projects.component';
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     interceptorProvider
