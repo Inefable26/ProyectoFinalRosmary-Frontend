@@ -4,60 +4,9 @@
     <!--Inicio de Social-->
     <div class="card">
         <h3>Social Networks</h3>
-        <button type="button" data-bs-toggle="modal" data-bs-target="#modalnetworks">Edit on me</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#nuevared">Edit on me</button>
     
-    <!-- Modal educaction -->
-    <div class="modal fade" id="modalnetworks" tabindex="-1"> <!--Fade hace que el diálogo aparezca lentito, efecto de desvanecimiento -->
-    <div class="modal-dialog"> <!--Aquí van cambio de tamaño(sm...lg) y orientación vertical(centered)-->
-    <div class="modal-content"> <!--Dentro de esto se organiza el contenido-->
-    
-    <div class="modal-header"> <!--Encabezado-->
-    <h5 class="modal-title" id="ModalLabel">Social Networks</h5>
-    <p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="limpiar">X</a></p>
-    </div> <!--Cierre de Encabezado-->
-    
-    <form>
-    <div class="modal-body"> <!--Apertura de Body-->
-    
-    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-    <option selected>Select menu</option>
-    <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
-    </select>
-    
-    <div class="form-floating">
-      <input type="title" class="form-control" id="floatingTitle"  name="cuenta de red" [(ngModel)]="cuenta" required> 
-      <label for="floatingTitle">Cuenta</label>
-    </div>
-    
-    <div class="form-floating">
-      <input type="title" class="form-control" id="floatingTitle" name="icono" [(ngModel)]="url_icono_red" required>
-      <label for="floatingTitle">Icono</label>
-    </div>
-    
-    
-    <div class="form"> <!--Apertura de añadir-->
-    <a role="button" href="#" data-bs-toggle="modal" data-bs-target="#nuevared">Add New Social Networks</a>
-    
-    </div> <!--Cierre de Añadir-->
-    
-    
-    </div> <!--Cierre de Body-->
-    
-    <div class="modal-footer"> <!--Apertura de footer-->
-    <button type="button" class="btn btn-primary" value="Save">Save changes</button>
-    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Delete" (click)="delete">Delete</button>
-    </div> <!--Cierre de footer-->
-    </form>
-    
-    </div> <!--Dentro de esto se organiza el contenido-->
-    </div> <!--Dentro de esto está modal dialog-->
-    </div> <!--Cierre de modal fade que contiene todo-->
-    
-    
-    <!--Modal 2-->
-    <!-- Modal education -->
+    <!-- Modal social -->
     <div class="modal fade" id="nuevared" tabindex="-1"> <!--Fade hace que el diálogo aparezca lentito, efecto de desvanecimiento -->
     <div class="modal-dialog"> <!--Aquí van cambio de tamaño(sm...lg) y orientación vertical(centered)-->
     <div class="modal-content"> <!--Dentro de esto se organiza el contenido-->

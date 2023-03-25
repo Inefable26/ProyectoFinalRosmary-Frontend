@@ -4,70 +4,11 @@
 <!--Incio de Experience-->  
 <div class="card">
     <h3>Experience</h3>
-    <button type="button" data-bs-toggle="modal" data-bs-target="#modalexperience">Edit on me</button>
-
-<!-- Modal experience -->
-<div class="modal fade" id="modalexperience" tabindex="-1" > <!--Fade hace que el diálogo aparezca lentito, efecto de desvanecimiento -->
-<div class="modal-dialog"> <!--Aquí van cambio de tamaño(sm...lg) y orientación vertical(centered)-->
-<div class="modal-content"> <!--Dentro de esto se organiza el contenido-->
-
-<div class="modal-header"> <!--Encabezado-->
-<h5 class="modal-title" id="ModalLabel">Experience</h5>
-<p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="limpiar">X</a></p>
-</div> <!--Cierre de Encabezado-->
-
-<form name="Experiencia"> 
-<div class="modal-body" > <!--Apertura de Body-->
-
-<select class="form-select form-select-sm" aria-label=".form-select-sm example">
-<option selected>Select menu</option>
-<option value="1">One</option>
-<option value="2">Two</option>
-<option value="3">Three</option>
-</select>
-
-<div class="mb-3">
-  <label for="formFileSm" class="form-label">Logo</label>
-  <input class="form-control form-control-sm" id="formFileSm" type="file" name="logo" [(ngModel)]="url_logo">
-</div>
-
-<div class="form-floating">
-  <input type="title" class="form-control" id="floatingTitle" name="puesto" [(ngModel)]="puesto" required>
-  <label for="floatingTitle">Puesto</label>
-</div>
-
-<div class="form-floating">
-  <textarea class="form-control"  id="floatingTitle" name="organizacion" [(ngModel)]="organizacion"></textarea>
-  <label for="floatingTitle">Organización</label>
-</div>
-
-<div class="form-floating">
-  <input type="title" class="form-control" id="floatingYear" name="anio" [(ngModel)]="ano">
-  <label for="floatingYear">Año de realización</label>
-</div>
-
-<div class="form"> <!--Apertura de añadir-->
-<a role="button" href="#" data-bs-toggle="modal" data-bs-target="#nuevo">Añadir nueva Experiencia</a>
-
-</div> <!--Cierre de Añadir-->
-
-
-</div> <!--Cierre de Body-->
-
-<div class="modal-footer"> <!--Apertura de footer-->
-  <button type="button" class="btn btn-primary" value="Save">Save changes</button>
-  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Delete" (click)="delete">Delete</button>
-  </div> <!--Cierre de footer-->
-</form>
-
-</div> <!--Dentro de esto se organiza el contenido-->
-</div> <!--Dentro de esto está modal dialog-->
-</div> <!--Cierre de modal fade que contiene todo-->
-
+    <button type="button" data-bs-toggle="modal" data-bs-target="#nuevaexperience">Edit on me</button>
 
 <!--Modal 2-->
 <!-- Modal experience -->
-<div class="modal fade" id="nuevo" tabindex="-1"> <!--Fade hace que el diálogo aparezca lentito, efecto de desvanecimiento -->
+<div class="modal fade" id="nuevaexperience" tabindex="-1"> <!--Fade hace que el diálogo aparezca lentito, efecto de desvanecimiento -->
 <div class="modal-dialog"> <!--Aquí van cambio de tamaño(sm...lg) y orientación vertical(centered)-->
 <div class="modal-content"> <!--Dentro de esto se organiza el contenido-->
 

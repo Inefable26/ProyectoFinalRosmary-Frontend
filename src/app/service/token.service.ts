@@ -55,6 +55,9 @@ public getUserName(): string{
  //Lo anterior era para ingresar y ahora será para salir//
  public logOut():void {
   window.sessionStorage.clear();
+  sessionStorage.removeItem(TOKEN_KEY);
+  sessionStorage.removeItem(USERNAME_KEY);
+  sessionStorage.removeItem(AUTHORITIES_KEY);
  }
 
 }

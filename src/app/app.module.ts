@@ -28,6 +28,7 @@ import { EditEducationComponent } from './edit-education/edit-education.componen
 import { EditSkillsComponent } from './edit-skills/edit-skills.component';
 import { EditProjectsComponent } from './edit-projects/edit-projects.component';
 import { EditSocialComponent } from './edit-social/edit-social.component';
+import { AvilandGuardGuard } from './guards/aviland-guard.guard';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { EditSocialComponent } from './edit-social/edit-social.component';
     ReactiveFormsModule
   ],
   providers: [
-    interceptorProvider
+    interceptorProvider,
+    AvilandGuardGuard
   ],
   bootstrap: [AppComponent]
 })

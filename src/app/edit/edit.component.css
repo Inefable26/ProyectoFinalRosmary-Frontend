@@ -55,6 +55,7 @@ section{
 .col-xs-12.col-sm-7.col-md-7.col-lg-7 {
 	display:flex;
     flex-wrap: wrap;
+    
     background-color: rgb(94, 28, 156);
     background-image: url(../../assets/IMG/ccs.jpg);
     background-size: cover;
@@ -77,6 +78,7 @@ section{
 .row {
     display:flex;
     flex-wrap: wrap;
+    
     
 }
 

@@ -1,65 +1,7 @@
 <div class="flex-container">
     <h3>Projects</h3>
     
-    <button type="button" data-bs-toggle="modal" data-bs-target="#modalprojects">Edit on me</button>
-
-    <!-- Modal proyectos -->
-    <div class="modal fade" id="modalprojects" tabindex="-1"> <!--Fade hace que el diálogo aparezca lentito, efecto de desvanecimiento -->
-      <div class="modal-dialog"> <!--Aquí van cambio de tamaño(sm...lg) y orientación vertical(centered)-->
-        <div class="modal-content"> <!--Dentro de esto se organiza el contenido-->
-          
-          <div class="modal-header"> <!--Encabezado-->
-            <h5 class="modal-title" id="ModalLabel">Projects</h5>
-            <p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="limpiar">X</a></p>
-        </div> <!--Cierre de Encabezado-->
-        
-        <form>
-        <div class="modal-body"> <!--Apertura de Body-->
-          
-          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-
-            <div class="mb-3">
-              <label for="formFileSm" class="form-label">Foto del proyecto</label>
-              <input class="form-control form-control-sm" id="formFileSm" type="file" name="url_img_project" [(ngModel)]="url_img_project">
-            </div>
-
-            <div class="form-floating">
-              <input type="title" class="form-control" id="floatingTitle" name="titulo" [(ngModel)]="titulo" required>
-              <label for="floatingTitle">Titulo del proyecto</label>
-            </div>
-          
-            <div class="form-floating">
-              <textarea class="form-control"  id="floatingTextarea" name="descripcion" [(ngModel)]="descripcion" required></textarea>
-              <label for="floatingTextarea">Descripción del proyecto</label>
-            </div>
-
-            <div class="form-floating">
-              <input type="title" class="form-control" id="floatingYear" name="anio" [(ngModel)]="ano">
-              <label for="floatingYear">Año de realización</label>
-            </div>
-          
-            <div class="form"> <!--Apertura de añadir proyecto-->
-            <a role="button" href="#" data-bs-toggle="modal" data-bs-target="#nuevoproyecto">Añadir Nuevo Proyecto</a>
-
-          </div> <!--Cierre de Añadir proyecto-->
-
-        </div> <!--Cierre de Body-->
-
-        <div class="modal-footer"> <!--Apertura de footer-->
-          <button type="button" class="btn btn-primary" value="Save">Save changes</button>
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Delete">Delete</button>
-        </div> <!--Cierre de footer-->
-      </form>
-
-        </div> <!--Dentro de esto se organiza el contenido-->
-      </div> <!--Dentro de esto está modal dialog-->
-    </div> <!--Cierre de modal fade que contiene los Proyectos-->
-
+    <button type="button" data-bs-toggle="modal" data-bs-target="#nuevoproyecto">Edit on me</button>
 
 <!--Modal 2-->
 <!-- Modal proyectos -->
