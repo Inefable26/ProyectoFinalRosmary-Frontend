@@ -13,14 +13,13 @@
 
 <div class="modal-header"> <!--Encabezado-->
 <h5 class="modal-title" id="ModalLabel">Education</h5>
-<p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</a></p>
+<p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="limpiar">X</a></p>
 </div> <!--Cierre de Encabezado-->
 
+<form>
 <div class="modal-body"> <!--Apertura de Body-->
 
-<form>
 <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-
 <option selected>Select menu</option>
 <option value="1">One</option>
 <option value="2">Two</option>
@@ -29,21 +28,21 @@
 
 <div class="mb-3">
   <label for="formFileSm" class="form-label">Logo</label>
-  <input class="form-control form-control-sm" id="formFileSm" type="file">
+  <input class="form-control form-control-sm" id="formFileSm" type="file" name="logo" [(ngModel)]="url_logo">
 </div>
 
 <div class="form-floating">
-  <input type="title" class="form-control" id="floatingTitle" >
+  <input type="title" class="form-control" id="floatingTitle" name="titulo" [(ngModel)]="titulo" required>
   <label for="floatingTitle">Título recibido</label>
 </div>
 
 <div class="form-floating">
-  <textarea class="form-control"  id="floatingTitle"></textarea>
+  <textarea class="form-control"  id="floatingTitle" name="institucion" [(ngModel)]="institucion"></textarea>
   <label for="floatingTitle">Institución</label>
 </div>
 
 <div class="form-floating">
-  <input type="title" class="form-control" id="floatingYear" >
+  <input type="title" class="form-control" id="floatingYear" name="anio" [(ngModel)]="ano">
   <label for="floatingYear">Año de realización</label>
 </div>
 
@@ -52,13 +51,14 @@
 
 </div> <!--Cierre de Añadir-->
 
-</form>
+
 </div> <!--Cierre de Body-->
 
 <div class="modal-footer"> <!--Apertura de footer-->
 <button type="button" class="btn btn-primary" value="Save">Save changes</button>
-<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Delete">Delete</button>
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Delete" (click)="delete">Delete</button>
 </div> <!--Cierre de footer-->
+</form>
 
 </div> <!--Dentro de esto se organiza el contenido-->
 </div> <!--Dentro de esto está modal dialog-->
@@ -73,39 +73,38 @@
 
 <div class="modal-header"> <!--Encabezado-->
 <h5 class="modal-title" id="ModalLabel">Nueva Educación</h5>
-<p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</a></p>
+<p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="limpiar">X</a></p>
 </div> <!--Cierre de Encabezado-->
 
+<form [formGroup]="form" (ngSubmit)="onEnviar($event)" novalidate name="NuevaEducación"> 
 <div class="modal-body"> <!--Apertura de Body-->
-
-<form >  
 
 <div class="mb-3">
 <label for="formFileSm" class="form-label">Logo</label>
-<input class="form-control form-control-sm" id="formFileSm" type="file">
+<input class="form-control form-control-sm" id="formFileSm" type="file" name ="logo" formControlName="url_logo" [(ngModel)]="url_logo">
 </div>
 
 <div class="form-floating">
-<input type="title" class="form-control" id="floatingTitle" >
+<input type="title" class="form-control" id="floatingTitle" name="titulo" formControlName="titulo" [(ngModel)]="titulo" required>
 <label for="floatingTitle">Titulo recibido</label>
 </div>
 
 <div class="form-floating">
-<textarea class="form-control"  id="floatingTitle"></textarea>
+<textarea class="form-control"  id="floatingTitle" name="institucion" formControlName="institucion" [(ngModel)]="institucion" required></textarea>
 <label for="floatingTitle">Institución</label>
 </div>
 
 <div class="form-floating">
-<input type="title" class="form-control" id="floatingYear" >
+<input type="title" class="form-control" id="floatingYear" name="ano" formControlName="ano" [(ngModel)]="ano" required>
 <label for="floatingYear">Año de realización</label>
 </div>
 
-</form>
 </div> <!--Cierre de Body-->
 
 <div class="modal-footer"> <!--Apertura de footer-->
-<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Add">Add</button>
+<button class="btn btn-secondary" data-bs-dismiss="modal"  type="submit" value="Add">Add</button>
 </div> <!--Cierre de footer-->
+</form>
 
 </div> <!--Dentro de esto se organiza el contenido-->
 </div> <!--Dentro de esto está modal dialog-->

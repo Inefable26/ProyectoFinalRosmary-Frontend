@@ -3,6 +3,8 @@ import { FormBuilder,FormGroup, Validators } from '@angular/forms';
 import { Experience } from '../model/experience';
 import { ExperienceService } from '../service/experience.service';
 
+
+
 @Component({
   selector: 'app-edit-experience',
   templateUrl: './edit-experience.component.html',
@@ -53,8 +55,7 @@ export class EditExperienceComponent implements OnInit {
       }});
 }
 
-
-  //onUpdate(): void {
+//onUpdate(): void {
   //  const id = this.experience.id;
   //  this.impExperienceService.update (id,this.experience).subscribe ({
   //    next:(data) => {
@@ -64,21 +65,21 @@ export class EditExperienceComponent implements OnInit {
   //}});
   //}
 
-cargarExperience(): void{
-  this.impExperienceService.list().subscribe(
-    data => {this.experience = data});
-  
-}
-
-
-delete (id:number){
-  if(id !=undefined){
-    this.impExperienceService.delete(id).subscribe(
-      data=>{this.cargarExperience();
-      },err=>{alert("No se eliminó")})
+  cargarExperience(): void{
+    this.impExperienceService.list().subscribe(
+      data => {this.experience = data});
     
   }
-}
+
+  delete (id:number){
+    if(id !=undefined){
+      this.impExperienceService.delete(id).subscribe(
+        data=>{this.cargarExperience();
+        },err=>{alert("No se eliminó")})
+      
+    }
+  }
+
 
 limpiar(): void{
   this.form.reset();

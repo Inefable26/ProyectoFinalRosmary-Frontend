@@ -12,5 +12,6 @@ export class persona{
         this.img = img;
         this.nombredescrip =nombredescrip;
         this.descripcion = descripcion;
+   
     }
 }

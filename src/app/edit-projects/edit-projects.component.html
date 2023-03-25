@@ -10,14 +10,13 @@
           
           <div class="modal-header"> <!--Encabezado-->
             <h5 class="modal-title" id="ModalLabel">Projects</h5>
-            <p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</a></p>
+            <p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="limpiar">X</a></p>
         </div> <!--Cierre de Encabezado-->
         
+        <form>
         <div class="modal-body"> <!--Apertura de Body-->
           
-          <form>
           <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-            
             <option selected>Open this select menu</option>
             <option value="1">One</option>
             <option value="2">Two</option>
@@ -26,21 +25,21 @@
 
             <div class="mb-3">
               <label for="formFileSm" class="form-label">Foto del proyecto</label>
-              <input class="form-control form-control-sm" id="formFileSm" type="file">
+              <input class="form-control form-control-sm" id="formFileSm" type="file" name="url_img_project" [(ngModel)]="url_img_project">
             </div>
 
             <div class="form-floating">
-              <input type="title" class="form-control" id="floatingTitle" >
+              <input type="title" class="form-control" id="floatingTitle" name="titulo" [(ngModel)]="titulo" required>
               <label for="floatingTitle">Titulo del proyecto</label>
             </div>
           
             <div class="form-floating">
-              <textarea class="form-control"  id="floatingTextarea"></textarea>
+              <textarea class="form-control"  id="floatingTextarea" name="descripcion" [(ngModel)]="descripcion" required></textarea>
               <label for="floatingTextarea">Descripción del proyecto</label>
             </div>
 
             <div class="form-floating">
-              <input type="title" class="form-control" id="floatingYear" >
+              <input type="title" class="form-control" id="floatingYear" name="anio" [(ngModel)]="ano">
               <label for="floatingYear">Año de realización</label>
             </div>
           
@@ -49,13 +48,13 @@
 
           </div> <!--Cierre de Añadir proyecto-->
 
-          </form>
         </div> <!--Cierre de Body-->
 
         <div class="modal-footer"> <!--Apertura de footer-->
           <button type="button" class="btn btn-primary" value="Save">Save changes</button>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Delete">Delete</button>
         </div> <!--Cierre de footer-->
+      </form>
 
         </div> <!--Dentro de esto se organiza el contenido-->
       </div> <!--Dentro de esto está modal dialog-->
@@ -70,39 +69,39 @@
   
   <div class="modal-header"> <!--Encabezado-->
     <h5 class="modal-title" id="ModalLabel">Nuevo Proyecto</h5>
-    <p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</a></p>
+    <p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="limpiar">X</a></p>
 </div> <!--Cierre de Encabezado-->
 
+<form [formGroup]="form" (ngSubmit)="onEnviar($event)" novalidate name="NuevoProyecto">
 <div class="modal-body"> <!--Apertura de Body-->
-  
-  <form>
  
     <div class="mb-3">
       <label for="formFileSm" class="form-label">Foto del proyecto</label>
-      <input class="form-control form-control-sm" id="formFileSm" type="file">
+      <input class="form-control form-control-sm" id="formFileSm" type="file" name="url_img_project" formControlName="url_img_project" [(ngModel)]="url_img_project">
     </div>
 
     <div class="form-floating">
-      <input type="title" class="form-control" id="floatingTitle" >
+      <input type="title" class="form-control" id="floatingTitle" name="titulo" formControlName="titulo" [(ngModel)]="titulo" required>
       <label for="floatingTitle">Titulo del proyecto</label>
     </div>
   
     <div class="form-floating">
-      <textarea class="form-control"  id="floatingTextarea"></textarea>
+      <textarea class="form-control"  id="floatingTextarea" name="descripcion" formControlName="descripcion" [(ngModel)]="descripcion" required></textarea>
       <label for="floatingTextarea">Descripción del proyecto</label>
     </div>
 
     <div class="form-floating">
-      <input type="title" class="form-control" id="floatingYear" >
+      <input type="title" class="form-control" id="floatingYear" name="ano" formControlName="ano" [(ngModel)]="ano" required>
       <label for="floatingYear">Año de realización</label>
     </div>
 
-  </form>
+ 
 </div> <!--Cierre de Body-->
 
 <div class="modal-footer"> <!--Apertura de footer-->
-  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Add">Add</button>
+  <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal" value="Add">Add</button>
 </div> <!--Cierre de footer-->
+</form>
 
 </div> <!--Dentro de esto se organiza el contenido-->
 </div> <!--Dentro de esto está modal dialog-->
@@ -110,6 +109,5 @@
 
 
 <!--Cierre de modal 2-->
-
 
 </div> <!--Cierre del flex-container de la columna-->

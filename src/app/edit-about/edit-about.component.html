@@ -1,7 +1,5 @@
 <div class="container">
     
-
-
 <!--Inicio de About-->
 <div class="card">
     <h3>About me</h3>
@@ -13,33 +11,51 @@
 
 <div class="modal-header"> <!--Encabezado-->
 <h5 class="modal-title" id="ModalLabel">About me</h5>
-<p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</a></p>
+<p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="limpiar">X</a></p>
 </div> <!--Cierre de Encabezado-->
 
+<form [formGroup]="form" (ngSubmit)="onEnviar($event)" novalidate name="NuevodeAbout">
 <div class="modal-body"> <!--Apertura de Body-->
 
-<form>
+  <label for="personas">Seleccione una persona:</label>
+  <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="personas" (change)="onSelect($event)">
+    <option value="null selected">Select</option>
+    <option *ngFor="let persona of personas" [value]="persona.id">{{ persona.nombre }} {{ persona.apellido }}</option>
 
+    </select>
 
 <div class="mb-3">
   <label for="formFileSm" class="form-label">Foto de perfil</label>
-  <input class="form-control form-control-sm" id="formFileSm" type="file">
+  <input class="form-control form-control-sm" id="formFileSm" type="file" name="img" formControlName="img" [(ngModel)]="img" required>
 </div>
 
+<div class="form-floating">
+  <textarea class="form-control"  id="floatingTextarea" name="nombre" formControlName="nombre" [(ngModel)]="nombre" required></textarea>
+  <label for="floatingTextarea">Nombre</label>
+</div>
 
 <div class="form-floating">
-  <textarea class="form-control"  id="floatingTextarea"></textarea>
+  <textarea class="form-control"  id="floatingTextarea" name="apellido" formControlName="apellido" [(ngModel)]="apellido" required></textarea>
+  <label for="floatingTextarea">Apellido</label>
+</div>
+
+<div class="form-floating">
+  <textarea class="form-control"  id="floatingTextarea" name="nombredescrip" formControlName="nombredescrip" [(ngModel)]="nombredescrip" required></textarea>
+  <label for="floatingTextarea">Nombre de Descripción</label>
+</div>
+
+<div class="form-floating">
+  <textarea class="form-control"  id="floatingTextarea" name="descripcion" formControlName="descripcion" [(ngModel)]="descripcion" required></textarea>
   <label for="floatingTextarea">Descripción</label>
 </div>
 
-
-</form>
 </div> <!--Cierre de Body-->
 
 <div class="modal-footer"> <!--Apertura de footer-->
-<button type="button" class="btn btn-primary" value="Save">Save changes</button>
-<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Delete">Delete</button>
+<button type="submit" class="btn btn-secondary" data-bs-dismiss="modal" value="Add">Add</button>
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Delete" (click)="onDelete">Delete</button>
 </div> <!--Cierre de footer-->
+</form>
 
 </div> <!--Dentro de esto se organiza el contenido-->
 </div> <!--Dentro de esto está modal dialog-->

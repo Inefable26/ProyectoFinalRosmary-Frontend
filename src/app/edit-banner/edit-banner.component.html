@@ -1,103 +1,46 @@
 <div class="container">
     
 
-<!--Inicio de Banner y Social Networks-->
+<!--Inicio de Banner-->
 <div class="card">
-    <h3>Banner & Social networks</h3>
-    <button type="button" data-bs-toggle="modal" data-bs-target="#modalbanner">Edit on me</button>
-
-<!-- Modal banner y social networks -->
-<div class="modal fade" id="modalbanner" tabindex="-1"> <!--Fade hace que el diálogo aparezca lentito, efecto de desvanecimiento -->
-<div class="modal-dialog"> <!--Aquí van cambio de tamaño(sm...lg) y orientación vertical(centered)-->
-<div class="modal-content"> <!--Dentro de esto se organiza el contenido-->
-
-<div class="modal-header"> <!--Encabezado-->
-<h5 class="modal-title" id="ModalLabel">Banner & Social networks</h5>
-<p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</a></p>
-</div> <!--Cierre de Encabezado-->
-
-<div class="modal-body"> <!--Apertura de Body-->
-
-<form>
-
-<div class="mb-3">
-  <label for="formFileSm" class="form-label">Foto del banner</label>
-  <input class="form-control form-control-sm" id="formFileSm" type="file">
-</div>
-
-<select class="form-select form-select-sm" aria-label=".form-select-sm example">
-
-  <option selected>Select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
-
-<div class="form-floating">
-  <input type="title" class="form-control" id="floatingTitle" >
-  <label for="floatingTitle">Red Social</label>
-</div>
+    <h3>Banner</h3>
+    <button type="button" data-bs-toggle="modal" data-bs-target="#nuevobanner">Edit on me</button>
 
 
-
-<div class="form"> <!--Apertura de añadir -->
-<a role="button" href="#" data-bs-toggle="modal" data-bs-target="#nuevared">Añadir nuevo </a>
-
-</div> <!--Cierre de Añadir-->
-
-</form>
-</div> <!--Cierre de Body-->
-
-<div class="modal-footer"> <!--Apertura de footer-->
-<button type="button" class="btn btn-primary" value="Save">Save changes</button>
-<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Delete">Delete</button>
-</div> <!--Cierre de footer-->
-
-</div> <!--Dentro de esto se organiza el contenido-->
-</div> <!--Dentro de esto está modal dialog-->
-</div> <!--Cierre de modal fade que contiene todo-->
-
-
-<!--Modal 2-->
 <!-- Modal -->
-<div class="modal fade" id="nuevared" tabindex="-1"> <!--Fade hace que el diálogo aparezca lentito, efecto de desvanecimiento -->
+<div class="modal fade" id="nuevobanner" tabindex="-1"> <!--Fade hace que el diálogo aparezca lentito, efecto de desvanecimiento -->
 <div class="modal-dialog"> <!--Aquí van cambio de tamaño(sm...lg) y orientación vertical(centered)-->
 <div class="modal-content"> <!--Dentro de esto se organiza el contenido-->
 
 <div class="modal-header"> <!--Encabezado-->
-<h5 class="modal-title" id="ModalLabel">Nueva Red</h5>
-<p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</a></p>
+<h5 class="modal-title" id="ModalLabel">Nuevo Banner</h5>
+<p><a class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="limpiar">X</a></p>
 </div> <!--Cierre de Encabezado-->
 
+<form [formGroup]="form" (ngSubmit)="onEnviar($event)" novalidate name="NuevoBanner">
 <div class="modal-body"> <!--Apertura de Body-->
 
-<form>
 
-<div class="form-floating">
-<input type="title" class="form-control" id="floatingTitle" >
-<label for="floatingTitle">Red Social</label>
-</div>
+  <div class="mb-3">
+    <label for="formFileSm" class="form-label">Foto del banner</label>
+    <input class="form-control form-control-sm" id="formFileSm" type="file" name="img" formControlName="img" [(ngModel)]="img" required>
+  </div>
 
-<div class="mb-3">
-<label for="formFileSm" class="form-label">Icono de la red</label>
-<input class="form-control form-control-sm" id="formFileSm" type="file">
-</div>
-
-</form>
 </div> <!--Cierre de Body-->
 
 <div class="modal-footer"> <!--Apertura de footer-->
-<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Add">Add</button>
+<button type="submit" class="btn btn-secondary" data-bs-dismiss="modal" value="Add">Add</button>
 </div> <!--Cierre de footer-->
+</form>
 
 </div> <!--Dentro de esto se organiza el contenido-->
 </div> <!--Dentro de esto está modal dialog-->
-</div> <!--Cierre de modal fade que contiene los Proyectos-->
+</div> <!--Cierre de modal fade que contiene-->
 
 
-<!--Cierre de modal 2-->
+<!--Cierre de modal-->
 
 </div>
-<!--Fin de Banner y Social Networks-->
+<!--Fin de Banner -->
 
 </div> <!--Cierre de container-->
