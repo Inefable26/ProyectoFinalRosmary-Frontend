@@ -7,7 +7,7 @@ import { Project } from '../model/project';
   providedIn: 'root'
 })
 export class ProjectService {
- projURL= 'http://localhost:8080/project/' 
+ projURL= 'http://proyectofinalrosmary-backend-production.up.railway.app/project/' 
 
   constructor(private httpClient: HttpClient) { }
 

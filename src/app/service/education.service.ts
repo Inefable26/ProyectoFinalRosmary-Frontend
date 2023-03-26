@@ -7,7 +7,7 @@ import { Education } from '../model/education';
   providedIn: 'root'
 })
 export class EducationService {
- educURL= 'http://localhost:8080/education/' 
+ educURL= 'http://proyectofinalrosmary-backend-production.up.railway.app/education/' 
 
   constructor(private httpClient: HttpClient) { }
 

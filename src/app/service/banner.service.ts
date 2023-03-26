@@ -7,7 +7,7 @@ import { Banner } from '../model/banner';
   providedIn: 'root'
 })
 export class BannerService {
- banURL= 'http://localhost:8080/banner/' 
+ banURL= 'http://proyectofinalrosmary-backend-production.up.railway.app/banner/' 
 
   constructor(private httpClient: HttpClient) { }
 
