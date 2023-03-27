@@ -10,7 +10,7 @@ import { TokenService } from './token.service';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'http://proyectofinalrosmary-backend-production.up.railway.app/auth/'; //la direc del back//
+  authURL = 'https://proyectofinalrosmary-backend-production.up.railway.app/auth/'; //la direc del back//
   constructor(private httpClient:HttpClient, private tokenService: TokenService) { } /*Le sirve a lo escrito arriba*/
 
   public nuevo(nuevoUsuario: NuevoUsuario): Observable<any> {

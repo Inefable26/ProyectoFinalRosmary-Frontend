@@ -7,7 +7,7 @@ import { Skills } from '../model/skills';
   providedIn: 'root'
 })
 export class SkillsService {
- skURL= 'http://proyectofinalrosmary-backend-production.up.railway.app/skills/' 
+ skURL= 'https://proyectofinalrosmary-backend-production.up.railway.app/skills/' 
 
   constructor(private httpClient: HttpClient) { }
 
