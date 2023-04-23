@@ -7,7 +7,7 @@ import { Network } from '../model/network';
   providedIn: 'root'
 })
 export class NetworkService {
- netURL= 'https://proyectofinalrosmary-backend-production.up.railway.app/network/' 
+ netURL= 'https://backend-final-ryanez.onrender.com/network/' 
 
   constructor(private httpClient: HttpClient) { }
 

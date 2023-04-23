@@ -29,6 +29,15 @@ import { EditSkillsComponent } from './edit-skills/edit-skills.component';
 import { EditProjectsComponent } from './edit-projects/edit-projects.component';
 import { EditSocialComponent } from './edit-social/edit-social.component';
 import { AvilandGuardGuard } from './guards/aviland-guard.guard';
+import { DeleteAboutComponent } from './delete-about/delete-about.component';
+import { DeleteBannerComponent } from './delete-banner/delete-banner.component';
+import { DeleteEducationComponent } from './delete-education/delete-education.component';
+import { DeleteExperienceComponent } from './delete-experience/delete-experience.component';
+import { DeleteHeaderComponent } from './delete-header/delete-header.component';
+import { DeleteProjectsComponent } from './delete-projects/delete-projects.component';
+import { DeleteSkillsComponent } from './delete-skills/delete-skills.component';
+import { DeleteSocialComponent } from './delete-social/delete-social.component';
+import { DeleteFooterComponent } from './delete-footer/delete-footer.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +63,15 @@ import { AvilandGuardGuard } from './guards/aviland-guard.guard';
     EditSkillsComponent,
     EditProjectsComponent,
     EditSocialComponent,
+    DeleteAboutComponent,
+    DeleteBannerComponent,
+    DeleteEducationComponent,
+    DeleteExperienceComponent,
+    DeleteHeaderComponent,
+    DeleteProjectsComponent,
+    DeleteSkillsComponent,
+    DeleteSocialComponent,
+    DeleteFooterComponent,
     
   ],
   imports: [

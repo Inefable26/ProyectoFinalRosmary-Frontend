@@ -7,7 +7,7 @@ import { Skills } from '../model/skills';
   providedIn: 'root'
 })
 export class SkillsService {
- skURL= 'https://proyectofinalrosmary-backend-production.up.railway.app/skills/' 
+ skURL= 'https://backend-final-ryanez.onrender.com/skills/' 
 
   constructor(private httpClient: HttpClient) { }
 

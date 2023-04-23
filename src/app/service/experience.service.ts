@@ -7,7 +7,7 @@ import { Experience } from '../model/experience';
   providedIn: 'root'
 })
 export class ExperienceService { 
- expURL= 'https://proyectofinalrosmary-backend-production.up.railway.app/experience/' 
+ expURL= 'https://backend-final-ryanez.onrender.com/experience/' 
 
   constructor(private httpClient: HttpClient) { }
 
