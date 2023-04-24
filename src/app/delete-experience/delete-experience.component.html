@@ -1,1 +1,27 @@
-<p>delete-experience works!</p>
+<Section id="DeleteExperience" class="deletework">
+    <div class="container text-left">
+      <br><p><h3>Experience</h3>
+    </div>
+   
+    <div class="flex-container">
+    <ul class="list-listings" *ngFor="let Experience of experience">
+    
+      <li class="mi-experiencia">
+     <div class="row">
+      <div class="col-md-2 col-sm-2">
+        <img src="/assets/IMG/ar-prog_logo.png" alt="logo Argentina Programa" width="40%" height="">
+     </div>
+  
+     <div class="col-md-10 col-sm-10">
+      <p><h5>{{Experience.puesto}}</h5>
+      <p><h6>{{Experience.organizacion}}</h6>
+      <p><h6>{{Experience.ano}}</h6>
+     </div>
+     </div>
+    </li> 
+  
+     
+    </ul>
+    </div>
+    
+  </Section>

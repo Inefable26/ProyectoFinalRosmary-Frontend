@@ -57,7 +57,6 @@ export class LoginComponent implements OnInit {
           if ((data.authorities as unknown as { authority: string }[]).some(authority => authority.authority === 'ROLE_ADMIN')) {
             // Redirigir al usuario a la página de destino (dashboard)
             this.isAdmin = true;
-            this.router.navigate(['edit']);
             console.log("Admin loggeado");
           } else {
             // Mostrar un mensaje de error si el usuario no tiene el rol requerido

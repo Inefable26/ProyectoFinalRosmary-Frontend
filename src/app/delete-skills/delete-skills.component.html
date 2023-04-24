@@ -1,1 +1,72 @@
-<p>delete-skills works!</p>
+<Section id="DeleteSkills" class="deleteskills">
+    <div class="container text-left">
+      
+      <br><p><h3>Hard and Soft Skills</h3>
+    
+    </div>
+     
+    <div class="container text-left">
+      <p><h4>Hard Skills</h4>
+    </div>
+
+    <div class="flex-container">
+        
+                 
+        <div class="row-Hard" *ngFor="let skills of Hardskills"> 
+            <div>
+                <circle-progress
+                    [title]="(skills.habilidad)"
+                    [showUnits]="false"
+                    [titleColor]="'#0a0a0a'"
+                    [subtitle]="(skills.subtitle)"
+                    [subtitleFontSize]="'20'"
+                    [subtitleColor]="'#0a0a0a'"
+                    [percent]="(skills.porcentaje)"
+                    [radius]="70"
+                    [outerStrokeWidth]="20"
+                    [innerStrokeWidth]="8"
+                    [outerStrokeGradient]="true"
+                    [outerStrokeColor]="'#00d5ff'"
+                    [outerStrokeGradientStopColor]="'#5704a9'"
+                    [innerStrokeColor]="'transparent'"
+                    [animation]="true"
+                    [animationDuration]="400"
+                ></circle-progress>
+            </div>
+      
+
+        </div> <!--Cierre de row--> 
+    </div> <!--Cierre de container-->
+
+    <div class="container text-left">
+      <p><h4>Soft Skills</h4>
+    </div> 
+    
+    <div class="flex-container" >
+    <div class="row-Soft" *ngFor="let skills of Softskills"> 
+      <div>
+          <circle-progress
+              [title]="(skills.habilidad)"
+              [showUnits]="false"
+              [titleColor]="'#0a0a0a'"
+              [subtitle]="(skills.subtitle)"
+              [subtitleFontSize]="'20'"
+              [subtitleColor]="'#0a0a0a'"
+              [percent]="(skills.porcentaje)"
+              [radius]="80"
+              [outerStrokeWidth]="20"
+              [innerStrokeWidth]="8"
+              [outerStrokeGradient]="true"
+              [outerStrokeColor]="'#910808'"
+              [outerStrokeGradientStopColor]="'#5f25cb'"
+              [innerStrokeColor]="'transparent'"
+              [animation]="true"
+              [animationDuration]="400"
+          ></circle-progress>
+      </div>
+
+     </div> <!--Cierre de row-->
+    
+    </div> <!--cierre de Flex container-->
+
+</Section>

@@ -28,7 +28,13 @@
         
     
       <div class="modal-footer" >
-        <button type="submit"  class="btn btn-primary" data-bs-dismiss="modal" aria-label="Inicio de sesión" >Iniciar sesión</button>
+        <button type="submit"  class="btn btn-primary" data-bs-dismiss="modal" aria-label="Iniciar sesión" >Iniciar Sesión</button>
+      <br>
+       <div *ngIf="isLogged && isAdmin">
+        <button type="submit"  class="btn btn-primary" data-bs-dismiss="modal" aria-label="Delete" routerLink='deletepage'>Delete for Admin</button>
+        <button type="submit"  class="btn btn-primary" data-bs-dismiss="modal" aria-label="Create" routerLink='edit'>Create for Admin</button>
+      </div>
+
       </div>
     
         </form>

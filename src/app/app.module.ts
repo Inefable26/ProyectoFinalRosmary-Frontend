@@ -37,7 +37,7 @@ import { DeleteHeaderComponent } from './delete-header/delete-header.component';
 import { DeleteProjectsComponent } from './delete-projects/delete-projects.component';
 import { DeleteSkillsComponent } from './delete-skills/delete-skills.component';
 import { DeleteSocialComponent } from './delete-social/delete-social.component';
-import { DeleteFooterComponent } from './delete-footer/delete-footer.component';
+import { DeletepageComponent } from './deletepage/deletepage.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +71,7 @@ import { DeleteFooterComponent } from './delete-footer/delete-footer.component';
     DeleteProjectsComponent,
     DeleteSkillsComponent,
     DeleteSocialComponent,
-    DeleteFooterComponent,
+    DeletepageComponent,
     
   ],
   imports: [
