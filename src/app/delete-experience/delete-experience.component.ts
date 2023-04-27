@@ -32,4 +32,23 @@ export class DeleteExperienceComponent {
     
   }
 
+  //onUpdate(): void {
+  //  const id = this.experience.id;
+  //  this.impExperienceService.update (id,this.experience).subscribe ({
+  //    next:(data) => {
+  //      alert ('Experiencia editada');
+  //    },error:(err) => {
+  //      alert ('Falló');
+  //}});
+  //}
+
+  onDelete (id:number){
+    if(id !=undefined){
+      this.impExperienceService.delete(id).subscribe(
+        data=>{this.cargarExperience();
+        },err=>{alert("No se eliminó")})
+      
+    }
+  }
+
 }

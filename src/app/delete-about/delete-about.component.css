@@ -1,0 +1,85 @@
+section{
+    display: flex;
+}
+
+.col-xs-12.col-sm-3.col-md-3.col-lg-3{
+    display:flex;
+    margin-top: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+img {
+    display:flex;
+    object-fit: contain;
+    width: 250px;
+    height: auto;
+    border: 2px solid rgb(29, 154, 139);
+    margin-top: 5px;
+}
+
+.row-2{
+    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.col-xs-12.col-sm-7.col-md-7.col-lg-7{
+    display:flex;
+    margin-top: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    border: 3px solid rgb(83, 3, 83);
+
+}
+
+.card-header{
+    background-color: rgb(29, 154, 139);
+}
+
+.list-group-item {
+    display: flex;
+    flex-direction: row;
+    
+    width: 40px;
+    height: 40px;
+    font-size: 90%; 
+
+}
+
+button{
+    display: flex;
+    justify-content:flex-end;
+	align-items:center; /*al text*/
+    line-height: 1.0;
+
+    width:12rem;
+    height: 50px;
+
+    background-color: rgba(31, 179, 159);
+    border: 3px solid rgb(48, 2, 48);
+    border-radius: 1cm;
+    
+
+	font-weight: bold;
+	font-size: 14px;
+	
+    padding: 0.5rem 30px;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+button:hover:not(.active) {
+    background-color: blueviolet;
+    transition: all ease 0.2s;
+}
+
+
+
+
+

@@ -32,4 +32,23 @@ export class DeleteProjectsComponent {
     
   }
 
+  //onUpdate(): void {
+  //  const id = this.project.id;
+  //  this.impProjectService.update (id,this.project).subscribe ({
+  //    next:(data) => {
+  //      alert ('Proyecto editado');
+  //    },error:(err) => {
+  //      alert ('Falló');
+  //}});
+  //}
+
+  onDelete (id:number){
+    if(id !=undefined){
+      this.impProjectService.delete(id).subscribe(
+        data=>{this.cargarProject();
+        },err=>{alert("No se eliminó")})
+      
+    }
+  }
+
 }

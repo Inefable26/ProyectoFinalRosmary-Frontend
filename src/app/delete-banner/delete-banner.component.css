@@ -1,0 +1,25 @@
+.deletebannercito {
+    position:relative;
+    padding-top: 80px;
+    justify-content: center;
+  }
+  
+  .col-12 {
+    margin-top:15px;
+    margin-left:0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    position: center;
+    box-shadow: 1px 1px 15px 5px; 
+    border: 2px solid rgb(83, 3, 83);
+  }
+  
+  
+  .object-fit-md-contain {
+      height:100%;
+      width:100%;
+      object-fit:fill;  
+         
+  }
+  

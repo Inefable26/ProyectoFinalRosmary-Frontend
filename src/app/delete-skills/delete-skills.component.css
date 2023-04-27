@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 10px;
+    margin-left: 9%;
+    margin-right: 9%;
+    
+    background-color: rgb(94, 28, 156);
+    border:2px solid rgb(48, 2, 48);
+    justify-content: center;
+    align-items: center;
+}
+
+.row-Hard {
+    display: flex;
+    flex-wrap: wrap;
+    border:2px solid rgb(48, 2, 48);
+    justify-content: center;
+    align-items: center;
+}
+
+.row-Hard div{
+    background-color: rgb(29, 154, 139);
+    text-align: center;
+    line-height: 75px;
+    border: 2px solid rgb(48, 2, 48);
+
+}
+
+
+.row-Soft {
+    display: flex;
+    flex-wrap: wrap;
+    border:2px solid rgb(48, 2, 48);
+    justify-content: center;
+    align-items: center;
+}
+
+.row-Soft div{
+    background-color: rgb(29, 154, 139);
+    text-align: center;
+    line-height: 75px;
+    border: 2px solid rgb(48, 2, 48);
+}

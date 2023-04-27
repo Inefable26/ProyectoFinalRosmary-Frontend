@@ -32,4 +32,23 @@ export class DeleteEducationComponent {
     
   }
 
+
+  onDelete (id:number){
+    if(id !=undefined){
+      this.impEducationService.delete(id).subscribe(
+        data=>{this.cargarEducation();
+        },err=>{alert("No se eliminó")})
+      
+    }
+  }
+
+  //onUpdate(): void {
+  //  const id = this.education.id;
+  //  this.impEducationService.update (id,this.education).subscribe ({
+  //    next:(data) => {
+  //      alert ('Education editada');
+  //    },error:(err) => {
+  //      alert ('Falló');
+  //}});
+  //}
 }
